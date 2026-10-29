@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GameVerse | Catálogo de Jogos</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">GAME<span>VERSE</span></h1>
+
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#catalogo">Jogos</a></li>
+                <li><a href="#categorias">Categorias</a></li>
+            </ul>
+
+            <input type="text" id="pesquisa" placeholder="Pesquisar jogos...">
+        </nav>
+    </header>
+
+    <!-- Banner principal -->
+    <section class="banner" id="inicio">
+        <div class="banner-conteudo">
+            <span class="destaque">JOGO EM DESTAQUE</span>
+
+            <h2>Explore novos mundos</h2>
+
+            <p>
+                Descubra aventuras incríveis, explore universos
+                e encontre seu próximo jogo favorito.
+            </p>
+
+            <a href="#catalogo" class="botao">Explorar jogos</a>
+        </div>
+    </section>
+
+    <!-- Categorias -->
+    <section class="categorias" id="categorias">
+        <h2>Categorias</h2>
+
+        <div class="filtros">
+            <button class="filtro ativo" data-categoria="Todos">Todos</button>
+            <button class="filtro" data-categoria="Ação">Ação</button>
+            <button class="filtro" data-categoria="Aventura">Aventura</button>
+            <button class="filtro" data-categoria="RPG">RPG</button>
+            <button class="filtro" data-categoria="Corrida">Corrida</button>
+        </div>
+    </section>
+
+    <!-- Catálogo -->
+    <main class="catalogo" id="catalogo">
+
+        <div class="titulo-catalogo">
+            <h2>Explore nosso catálogo</h2>
+            <p>Encontre jogos para todos os estilos.</p>
+        </div>
+
+        <div class="jogos" id="lista-jogos">
+
+            <!-- Jogo 1 -->
+            <article class="card" data-categoria="Ação">
+                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e"
+                     alt="Ambiente de jogos eletrônicos">
+
+                <div class="card-conteudo">
+                    <span class="genero">Ação</span>
+                    <h3>Cyberpunk 2077</h3>
+                    <p>Explore uma cidade futurista cheia de desafios.</p>
+                </div>
+            </article>
+
+            <!-- Jogo 2 -->
+            <article class="card" data-categoria="Aventura">
+                <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420"
+                     alt="Ambiente de videogame">
+
+                <div class="card-conteudo">
+                    <span class="genero">Aventura</span>
+                    <h3>Minecraft</h3>
+                    <p>Construa, explore e crie seu próprio universo.</p>
+                </div>
+            </article>
+
+            <!-- Jogo 3 -->
+            <article class="card" data-categoria="RPG">
+                <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8"
+                     alt="Jogador utilizando videogame">
+
+                <div class="card-conteudo">
+                    <span class="genero">RPG</span>
+                    <h3>The Witcher 3</h3>
+                    <p>Viva uma aventura épica em um mundo fantástico.</p>
+                </div>
+            </article>
+
+            <!-- Jogo 4 -->
+            <article class="card" data-categoria="Corrida">
+                <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d"
+                     alt="Carro esportivo">
+
+                <div class="card-conteudo">
+                    <span class="genero">Corrida</span>
+                    <h3>Forza Horizon</h3>
+                    <p>Explore estradas e participe de corridas emocionantes.</p>
+                </div>
+            </article>
+
+            <!-- Jogo 5 -->
+            <article class="card" data-categoria="Ação">
+                <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575"
+                     alt="Equipamentos de jogos">
+
+                <div class="card-conteudo">
+                    <span class="genero">Ação</span>
+                    <h3>God of War</h3>
+                    <p>Uma jornada repleta de desafios e mitologia.</p>
+                </div>
+            </article>
+
+            <!-- Jogo 6 -->
+            <article class="card" data-categoria="Aventura">
+                <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769"
+                     alt="Ambiente tecnológico">
+
+                <div class="card-conteudo">
+                    <span class="genero">Aventura</span>
+                    <h3>Hollow Knight</h3>
+                    <p>Descubra os segredos de um reino misterioso.</p>
+                </div>
+            </article>
+
+        </div>
+
+        <p id="mensagem" class="mensagem"></p>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2026 GameVerse | Catálogo de Jogos</p>
+        <p>Projeto desenvolvido para fins educacionais.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

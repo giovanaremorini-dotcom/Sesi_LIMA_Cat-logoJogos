@@ -1,0 +1,148 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GameVerse | Catálogo de Jogos</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<header class="cabecalho">
+    <div class="identidade">
+        <h1 class="logo">
+            <i class="fa-solid fa-gamepad"></i>
+            GAME<span>VERSE</span>
+        </h1>
+        <p>Descubra seu próximo jogo favorito.</p>
+    </div>
+    <div class="busca">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+            type="text"
+            id="pesquisa"
+            placeholder="Pesquisar jogos..."">
+    </div>
+</header>
+
+    <section class="categorias" id="categorias">
+
+        <h2>Explore os jogos</h2>
+
+        <div class="filtros">
+            <button class="filtro ativo" data-categoria="Todos">
+                Todos
+            </button>
+
+            <button class="filtro" data-categoria="Ação">
+                Ação
+            </button>
+
+            <button class="filtro" data-categoria="Aventura">
+                Aventura
+            </button>
+
+            <button class="filtro" data-categoria="RPG">
+                RPG
+            </button>
+
+            <button class="filtro" data-categoria="Corrida">
+                Corrida
+            </button>
+        </div>
+
+    </section>
+    <main class="catalogo">
+        <div class="jogos" id="lista-jogos">
+            <article class="card" data-categoria="Ação">
+                <div class="imagem-jogo">
+                    <img
+                        src="TombRaider.png"
+                        alt="Exploração">
+                </div>
+                <div class="card-conteudo">
+                    <span class="genero">Ação</span>
+                    <h3>Tomb Raider</h3>
+                    <p>Explore tumbas antigas, resolva enigmas complexos e enfrente perigos globais para desvendar mistérios históricos.</p>
+                </div>
+            </article>
+
+            <article class="card" data-categoria="Aventura">
+                <div class="imagem-jogo">
+                    <img
+                        src="SuperMario.png"
+                        alt="Missão">
+                </div>
+                <div class="card-conteudo">
+                    <span class="genero">Aventura</span>
+                    <h3>Super Mário World</h3>
+                    <p>Resgate a Princesa Peach das garras de Bowser e seus filhos, junto do querido companheiro Yoshi.</p>
+                </div>
+            </article>
+
+            <article class="card" data-categoria="RPG">
+                <div class="imagem-jogo">
+                    <img
+                        src="Zelda.png"
+                        alt="Criação">
+                </div>
+                <div class="card-conteudo">
+                    <span class="genero">RPG</span>
+                    <h3>Zelda</h3>
+                    <p>Explore mundos fantásticos, quebra-cabeças em masmorras e combates épicos para proteger o reino de Hyrule e a relíquia sagrada Triforce das forças malignas de Ganon.</p>
+                </div>
+            </article>
+
+            <article class="card" data-categoria="Corrida">
+                <div class="imagem-jogo">
+                    <img
+                        src="Sonic.png"
+                        alt="Sonic 2">
+                </div>
+                <div class="card-conteudo">
+                    <span class="genero">Corrida</span>
+                    <h3>Sonic 2</h3>
+                    <p>Impeça que o Dr. Robotnik ative a sua estação espacial, a Death Egg.</p>
+                </div>
+            </article>
+
+            <article class="card" data-categoria="Ação">
+                <div class="imagem-jogo">
+                    <img
+                        src="StreetFitghter2.png"
+                        alt="StreetFighter">
+                </div>
+                <div class="card-conteudo">
+                    <span class="genero">Ação</span>
+                    <h3>Street Fighter 2</h3>
+                    <p>Participe de combates intensos de um contra um, marcados por golpes especiais icônicos como o Hadouken.</p>
+                </div>
+            </article>
+
+            <article class="card" data-categoria="Aventura">
+                <div class="imagem-jogo">
+                    <img
+                        src="DonkeyKong.png"
+                        alt="DonkeyKong">
+                </div>
+                <div class="card-conteudo">
+                    <span class="genero">Aventura</span>
+                    <h3>Donkey Kong</h3>
+                    <p>Lance barris contra o carpinteiro Jumpman</p>
+                </div>
+            </article>
+        </div>
+        <p id="mensagem" class="mensagem"></p>
+    </main>
+
+    <footer>
+        <p>© 2026 GameVerse | Catálogo de Jogos</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #101018;
+    color: #ffffff;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #171721;
+    padding: 20px 8%;
+    border-bottom: 1px solid #292938;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.logo span {
+    color: #8b5cf6;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.menu a {
+    color: #ccccd8;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #8b5cf6;
+}
+
+#pesquisa {
+    background-color: #252532;
+    border: 1px solid #383849;
+    border-radius: 8px;
+    padding: 12px;
+    color: white;
+    outline: none;
+}
+
+#pesquisa:focus {
+    border-color: #8b5cf6;
+}
+
+/* Banner principal */
+.banner {
+    min-height: 350px;
+    padding: 70px 8%;
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(90deg, #101018 15%, transparent 100%),
+        linear-gradient(0deg, #101018, transparent),
+        url("https://images.unsplash.com/photo-1542751371-adc38448a05e");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-conteudo {
+    max-width: 550px;
+}
+
+.destaque {
+    color: #a78bfa;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.banner h2 {
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.banner p {
+    color: #ccccd8;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #8b5cf6;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #7042df;
+    transform: translateY(-3px);
+}
+
+/* Categorias */
+.categorias {
+    padding: 35px 8% 10px;
+}
+
+.categorias h2,
+.titulo-catalogo h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.filtro {
+    background-color: #252532;
+    color: #ccccd8;
+    border: 1px solid #383849;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filtro:hover,
+.filtro.ativo {
+    background-color: #8b5cf6;
+    color: white;
+    border-color: #8b5cf6;
+}
+
+/* Catálogo */
+.catalogo {
+    padding: 35px 8% 60px;
+}
+
+.titulo-catalogo p {
+    color: #9999aa;
+    margin-bottom: 25px;
+}
+
+.jogos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Cards */
+.card {
+    background-color: #1b1b28;
+    border: 1px solid #292938;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: #8b5cf6;
+    box-shadow: 0 8px 25px #00000050;
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-conteudo {
+    padding: 18px;
+}
+
+.genero {
+    color: #a78bfa;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 19px;
+}
+
+.card p {
+    color: #9999aa;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Mensagem de pesquisa */
+.mensagem {
+    color: #9999aa;
+    margin-top: 25px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #171721;
+    border-top: 1px solid #292938;
+    text-align: center;
+    padding: 25px;
+    color: #9999aa;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .jogos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .banner h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 600px) {
+    header,
+    .categorias,
+    .catalogo {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    #pesquisa {
+        width: 100%;
+    }
+
+    .jogos {
+        grid-template-columns: 1fr;
+    }
+
+    .banner {
+        padding: 50px 5%;
+    }
+
+    .banner h2 {
+        font-size: 30px;
+    }
+}
