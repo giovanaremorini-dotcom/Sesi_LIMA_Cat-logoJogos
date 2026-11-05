@@ -221,3 +221,60 @@ footer {
         width: 100%;
     }
 }
+.botao-cadastrar {
+    background-color: #8b5cf6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 18px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.botao-cadastrar:hover {
+    background-color: #7041cf;
+}
+#modalCadastro {
+    margin: auto;
+    width: 90%;
+    max-width: 450px;
+    padding: 25px;
+    background-color: #1b1b28;
+    color: white;
+    border: 1px solid #8b5cf6;
+    border-radius: 10px;
+}
+#modalCadastro::backdrop {
+    background-color: #000000aa;
+}
+#modalCadastro h2 {
+    margin-bottom: 20px;
+}
+#formJogo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#formJogo input,
+#formJogo select,
+#formJogo textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #383849;
+    background-color: #252532;
+    color: white;
+}
+#formJogo textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+#formJogo button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #8b5cf6;
+    color: white;
+}
+#formJogo button:hover {
+    background-color: #7041cf;
+}
